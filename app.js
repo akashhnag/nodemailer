@@ -13,10 +13,10 @@ var transporter= nodemailer.createTransport({
     }*/
 })
 var mailOptions={
-    from:"princ3sscharming28@gmail.com",
-    to:"akash.nag63@yahoo.in",
-    subject:"Nodemailer Test",
-    text:"Hello World!!"
+    from:"",
+    to:"",
+    subject:"",
+    text:""
 }
 
 transporter.sendMail(mailOptions,(err,res)=>{
