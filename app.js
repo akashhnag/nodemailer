@@ -1,18 +1,15 @@
 const nodemailer=require("nodemailer");
 
-var transporter= nodemailer.createTransport({
+const transporter= nodemailer.createTransport({
     service:"gmail",
-    //secure:false,
     port:587,
     auth:{
         user:"username",
         pass:"password"
     }
-    /*tls:{
-        rejectUnauthorized:false
-    }*/
 })
-var mailOptions={
+
+const mailOptions={
     from:"",
     to:"",
     subject:"",
